@@ -3,6 +3,9 @@
   <name>build</name>
   <description />
   <settings>
+    <options>
+      <option name="cleanBuild" value="true" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_3" name="" type="jb.nuget.installer">
