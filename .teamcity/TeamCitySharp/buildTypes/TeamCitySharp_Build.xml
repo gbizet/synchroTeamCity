@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="989b2a0c-2a64-4f8b-80eb-ce4f1be6cbe3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Build</name>
+  <description />
+  <settings ref="TeamCitySharp_TemplateBasiqueGitSln">
+    <parameters />
+    <build-runners order="RUNNER_1, RUNNER_2, RUNNER_10" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
