@@ -4,6 +4,7 @@
   <description>an exemple</description>
   <settings>
     <options>
+      <option name="artifactRules" value="**/*.*=&gt;out.zip" />
       <option name="cleanBuild" value="true" />
       <option name="showDependenciesChanges" value="true" />
     </options>
