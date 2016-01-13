@@ -6,6 +6,9 @@
     <options>
       <option name="cleanBuild" value="true" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_3" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_3" name="" type="jb.nuget.installer">
