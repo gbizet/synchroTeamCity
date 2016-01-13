@@ -3,14 +3,12 @@
   <name>https://github.com/gbizet/MVCBlog.git</name>
   <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
   <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
-  <param name="authMethod" value="PASSWORD" />
+  <param name="authMethod" value="ANONYMOUS" />
   <param name="branch" value="refs/heads/master" />
   <param name="ignoreKnownHosts" value="true" />
-  <param name="secure:password" value="zxx45959a59e1c526f8b45f46eaac1bc2a0" />
   <param name="submoduleCheckout" value="CHECKOUT" />
-  <param name="url" value="https://github.com/gbizet/MVCBlog.git" />
+  <param name="url" value="https://github.com/danielpalme/MVCBlog.git" />
   <param name="useAlternates" value="true" />
-  <param name="username" value="gbizet" />
   <param name="usernameStyle" value="USERID" />
 </vcs-root>
 
