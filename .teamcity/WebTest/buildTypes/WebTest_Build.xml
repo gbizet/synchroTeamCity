@@ -8,7 +8,10 @@
       <runner id="RUNNER_3" name="" type="jb.nuget.installer">
         <parameters>
           <param name="nuget.path" value="?NuGet.CommandLine.DEFAULT" />
-          <param name="nuget.use.restore" value="checked" />
+          <param name="nuget.updatePackages.mode" value="sln" />
+          <param name="nuget.use.restore" value="install" />
+          <param name="nugetCustomPath" value="?NuGet.CommandLine.DEFAULT" />
+          <param name="nugetPathSelector" value="?NuGet.CommandLine.DEFAULT" />
           <param name="sln.path" value="src/MVCBlog.sln" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
