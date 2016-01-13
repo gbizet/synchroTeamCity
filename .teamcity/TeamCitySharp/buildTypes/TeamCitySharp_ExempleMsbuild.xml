@@ -8,7 +8,7 @@
       <option name="showDependenciesChanges" value="true" />
     </options>
     <parameters>
-      <param name="SLN" value="abc-bank.sln" spec="text validationMode='any' display='prompt'" />
+      <param name="SLN" value="Src/GameOfLife.sln" spec="text validationMode='any' display='prompt'" />
       <param name="VCS" value="https://github.com/GcasWfc/abc-bank-csharp.git" spec="text validationMode='any' display='prompt'" />
     </parameters>
     <build-runners>
