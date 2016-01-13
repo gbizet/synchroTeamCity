@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="ed750394-841c-4d2e-8e5e-66eae62d1cd1" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Exemple_msbuild</name>
+  <description>an exemple</description>
+  <settings ref="TeamCitySharp_TemplateBasiqueGitSln">
+    <parameters>
+      <param name="SLN" value="abc-bank.sln" />
+      <param name="VCS" value="https://github.com/GcasWfc/abc-bank-csharp.git" />
+    </parameters>
+    <build-runners order="RUNNER_1, RUNNER_2, RUNNER_10" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
