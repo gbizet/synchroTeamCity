@@ -22,7 +22,7 @@
       <runner id="RUNNER_4" name="" type="VS.Solution">
         <parameters>
           <param name="build-file-path" value="src/MVCBlog.sln" />
-          <param name="msbuild.prop.Configuration" value="Debug" />
+          <param name="msbuild.prop.Configuration" value="Any CPU" />
           <param name="msbuild.prop.Platform" value="x64" />
           <param name="msbuild_version" value="14.0" />
           <param name="run-platform" value="x86" />
