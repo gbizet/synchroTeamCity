@@ -40,7 +40,6 @@
           <param name="dotNetCoverage.PartCover.includes" value="[*]*" />
           <param name="dotNetCoverage.PartCover.platformBitness" value="x86" />
           <param name="dotNetCoverage.PartCover.platformVersion" value="v2.0" />
-          <param name="dotNetCoverage.tool" value="dotcover" />
           <param name="msbuild_version" value="4.0" />
           <param name="run-platform" value="x86" />
           <param name="teamcity.step.mode" value="default" />
