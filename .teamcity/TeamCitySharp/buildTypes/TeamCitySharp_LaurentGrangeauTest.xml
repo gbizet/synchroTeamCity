@@ -3,6 +3,9 @@
   <name>LaurentGrangeauTest</name>
   <description />
   <settings ref="TeamCitySharp_TemplateBasiqueGitSln">
+    <options>
+      <option name="artifactRules" value="**/*.*=&gt;out.zip" />
+    </options>
     <parameters>
       <param name="SLN" value="dotnet40/DataPatterns.sln" />
       <param name="VCS" value="https://github.com/laurentgrangeau/Ef.DataPatterns.git" />
