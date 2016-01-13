@@ -13,7 +13,7 @@
     </disabled-settings>
     <parameters>
       <param name="SLN" value="Src/GameOfLife.sln" spec="text validationMode='any' display='prompt'" />
-      <param name="VCS" value="https://github.com/ecampidoglio/gameoflife.git" spec="text validationMode='any' display='prompt'" />
+      <param name="VCS" value="https://github.com/andyfengc/WebGame.git" spec="text validationMode='any' display='prompt'" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_1" name="" type="jb.nuget.installer">
