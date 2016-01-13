@@ -39,10 +39,10 @@
           <param name="dotNetCoverage.PartCover.includes" value="[*]*" />
           <param name="dotNetCoverage.PartCover.platformBitness" value="x86" />
           <param name="dotNetCoverage.PartCover.platformVersion" value="v2.0" />
-          <param name="msbuild_version" value="14.0" />
+          <param name="msbuild_version" value="4.0" />
           <param name="run-platform" value="x64" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="toolsVersion" value="14.0" />
+          <param name="toolsVersion" value="4.0" />
         </parameters>
       </runner>
     </build-runners>
