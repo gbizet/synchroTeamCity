@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="6bcfbb31-0719-41d3-bb6d-bfdcf0645536" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Deploy to test</name>
+  <description />
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_5" name="" type="jb.nuget.installer">
+        <parameters>
+          <param name="nuget.path" value="?NuGet.CommandLine.DEFAULT" />
+          <param name="nuget.updatePackages.mode" value="sln" />
+          <param name="nuget.use.restore" value="install" />
+          <param name="nugetCustomPath" value="?NuGet.CommandLine.DEFAULT" />
+          <param name="nugetPathSelector" value="?NuGet.CommandLine.DEFAULT" />
+          <param name="sln.path" value="src/MVCBlog.sln" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_6" name="" type="VS.Solution">
+        <parameters>
+          <param name="build-file-path" value="src/MVCBlog.sln" />
+          <param name="msbuild.prop.Configuration" value="Release" />
+          <param name="msbuild_version" value="14.0" />
+          <param name="run-platform" value="x86" />
+          <param name="runnerArgs"><![CDATA[/p:DeployOnBuild=True
+/p:PublishProfile="test"
+/p:ProfileTransformWebConfigEnabled=False]]></param>
+          <param name="targets" value="Rebuild" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="toolsVersion" value="14.0" />
+          <param name="vs.version" value="vs2015" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="WebTest_HttpsGithubComGbizetMVCBlogGit" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
