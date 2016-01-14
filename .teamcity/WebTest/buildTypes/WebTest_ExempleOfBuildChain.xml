@@ -10,7 +10,7 @@
       <runner id="RUNNER_6" name="" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[Echo "just for Demo, deploy test - and show parameter from the build step"
-Echo %dep.WebTest_Build.OneVarTest%
+Echo %dep.WebTest_MemeSiLeNomPlaitPas.OneVarTest%
 echo "is it from promote?"
 echo "%PromotedVar%]]></param>
           <param name="teamcity.step.mode" value="default" />
@@ -24,7 +24,7 @@ echo "%PromotedVar%]]></param>
     <requirements />
     <build-triggers />
     <dependencies>
-      <depend-on sourceBuildTypeId="WebTest_Build">
+      <depend-on sourceBuildTypeId="WebTest_MemeSiLeNomPlaitPas">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="run-build-on-the-same-agent" value="true" />
