@@ -23,7 +23,8 @@
           <param name="msbuild_version" value="14.0" />
           <param name="run-platform" value="x86" />
           <param name="runnerArgs"><![CDATA[/p:DeployOnBuild=True
-/p:PublishProfile="test"]]></param>
+/p:PublishProfile="test"
+/p:ProfileTransformWebConfigEnabled=False]]></param>
           <param name="targets" value="Rebuild" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="14.0" />
