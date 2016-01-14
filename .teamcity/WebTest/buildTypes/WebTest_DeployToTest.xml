@@ -16,19 +16,21 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_6" name="" type="VS.Solution">
+      <runner id="RUNNER_6" name="" type="simpleRunner">
         <parameters>
-          <param name="build-file-path" value="src/MVCBlog.sln" />
-          <param name="msbuild.prop.Configuration" value="Release" />
-          <param name="msbuild_version" value="14.0" />
-          <param name="run-platform" value="x86" />
-          <param name="runnerArgs"><![CDATA[/p:DeployOnBuild=True
-/p:PublishProfile="test"
-/p:ProfileTransformWebConfigEnabled=False]]></param>
-          <param name="targets" value="Rebuild" />
+          <param name="script.content"><![CDATA["C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"
+    -source:package='artifacts\WebDeploy\<target environment>\AcmeCompany.Portal.zip'
+    -dest:auto,
+        computerName="https://<windows azure web site web publish URL>:443/msdeploy.axd?site=<windows azure web site name>",
+        userName="<deployment user name>",
+        password="<deployment password>",
+        authtype="Basic",
+        includeAcls="False"
+    -verb:sync
+    -disableLink:AppPoolExtension -disableLink:ContentExtension -disableLink:CertificateExtension
+    -setParamFile:"msdeploy\parameters\<target environment>\AcmeCompany.Portal.SetParameters.xml"]]></param>
           <param name="teamcity.step.mode" value="default" />
-          <param name="toolsVersion" value="14.0" />
-          <param name="vs.version" value="vs2015" />
+          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
     </build-runners>
