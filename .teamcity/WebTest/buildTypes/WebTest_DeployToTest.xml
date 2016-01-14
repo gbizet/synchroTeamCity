@@ -21,7 +21,8 @@
       </runner>
       <runner id="RUNNER_6" name="" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="Echo &quot;just for Demo, deploy test&quot;" />
+          <param name="script.content"><![CDATA[Echo "just for Demo, deploy test - and show parameter from the build step"
+Echo %dep.WebTest_Build.OneVarTest%]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
