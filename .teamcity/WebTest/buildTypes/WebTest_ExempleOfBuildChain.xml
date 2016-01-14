@@ -6,7 +6,9 @@
     <disabled-settings>
       <setting-ref ref="RUNNER_5" />
     </disabled-settings>
-    <parameters />
+    <parameters>
+      <param name="PromotedVar" value="NotFromPromotedBC" />
+    </parameters>
     <build-runners>
       <runner id="RUNNER_5" name="" type="jb.nuget.installer">
         <parameters>
