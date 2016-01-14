@@ -3,6 +3,9 @@
   <name>Deploy to test</name>
   <description />
   <settings>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_5" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_5" name="" type="jb.nuget.installer">
