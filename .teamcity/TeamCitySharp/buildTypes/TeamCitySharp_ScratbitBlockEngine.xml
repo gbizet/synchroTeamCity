@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="26fbf8a2-454f-4558-a1bd-968793abd6aa" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>scratbit/BlockEngine</name>
+  <description>Block Engine</description>
+  <settings ref="TeamCitySharp_TemplateBasiqueGitSln">
+    <parameters>
+      <param name="SLN" value="BlockEngine.sln" />
+      <param name="VCS" value="https://github.com/scratbit/BlockEngine" />
+    </parameters>
+    <build-runners order="RUNNER_1, RUNNER_2, RUNNER_10" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
