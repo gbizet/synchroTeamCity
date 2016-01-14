@@ -3,24 +3,10 @@
   <name>ExempleOfBuildChain</name>
   <description />
   <settings>
-    <disabled-settings>
-      <setting-ref ref="RUNNER_5" />
-    </disabled-settings>
     <parameters>
       <param name="PromotedVar" value="NotFromPromotedBC" />
     </parameters>
     <build-runners>
-      <runner id="RUNNER_5" name="" type="jb.nuget.installer">
-        <parameters>
-          <param name="nuget.path" value="?NuGet.CommandLine.DEFAULT" />
-          <param name="nuget.updatePackages.mode" value="sln" />
-          <param name="nuget.use.restore" value="install" />
-          <param name="nugetCustomPath" value="?NuGet.CommandLine.DEFAULT" />
-          <param name="nugetPathSelector" value="?NuGet.CommandLine.DEFAULT" />
-          <param name="sln.path" value="src/MVCBlog.sln" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_6" name="" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[Echo "just for Demo, deploy test - and show parameter from the build step"
