@@ -21,17 +21,7 @@
       </runner>
       <runner id="RUNNER_6" name="" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA["C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"
-    -source:package='artifacts\WebDeploy\<target environment>\AcmeCompany.Portal.zip'
-    -dest:auto,
-        computerName="https://<windows azure web site web publish URL>:443/msdeploy.axd?site=<windows azure web site name>",
-        userName="<deployment user name>",
-        password="<deployment password>",
-        authtype="Basic",
-        includeAcls="False"
-    -verb:sync
-    -disableLink:AppPoolExtension -disableLink:ContentExtension -disableLink:CertificateExtension
-    -setParamFile:"msdeploy\parameters\<target environment>\AcmeCompany.Portal.SetParameters.xml"]]></param>
+          <param name="script.content" value="Echo &quot;just for Demo, deploy test&quot;" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
