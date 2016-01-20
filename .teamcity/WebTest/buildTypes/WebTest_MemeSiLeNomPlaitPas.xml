@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="709141b6-8b77-4fab-815d-1f9737b5efe3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>meme si le nom plait pas</name>
+  <name>boo</name>
   <description />
   <settings>
     <options>
