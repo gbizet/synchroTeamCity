@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings />
+<settings>
+  <tools>
+    <default-versions>
+      <tool-version tool-type="NuGet.CommandLine" version="3.3.0.nupkg" />
+    </default-versions>
+  </tools>
+</settings>
 

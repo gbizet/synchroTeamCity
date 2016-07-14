@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="709141b6-8b77-4fab-815d-1f9737b5efe3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="709141b6-8b77-4fab-815d-1f9737b5efe3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>boo</name>
   <description />
   <settings>
     <options>
       <option name="artifactRules" value="**\MVCBlog.Website\**\*.*=&gt;WebSite" />
+      <option name="checkoutMode" value="ON_SERVER" />
     </options>
     <parameters>
       <param name="OneVarTest" value="Default" />
@@ -12,11 +13,11 @@
     <build-runners>
       <runner id="RUNNER_3" name="" type="jb.nuget.installer">
         <parameters>
-          <param name="nuget.path" value="?NuGet.CommandLine.DEFAULT" />
+          <param name="nuget.path" value="%teamcity.tool.NuGet.CommandLine.DEFAULT%" />
           <param name="nuget.updatePackages.mode" value="sln" />
           <param name="nuget.use.restore" value="install" />
-          <param name="nugetCustomPath" value="?NuGet.CommandLine.DEFAULT" />
-          <param name="nugetPathSelector" value="?NuGet.CommandLine.DEFAULT" />
+          <param name="nugetCustomPath" value="%teamcity.tool.NuGet.CommandLine.DEFAULT%" />
+          <param name="nugetPathSelector" value="%teamcity.tool.NuGet.CommandLine.DEFAULT%" />
           <param name="sln.path" value="src/MVCBlog.sln" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
