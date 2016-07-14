@@ -4,7 +4,15 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_13" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="docker build -f DockerFile-swarm-jdk8-dotnet-etc/dotnet-aspnet46-webapp/Dockerfile -t demo ." />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="DockerWindows_HttpsGithubComFinaxysDockerWindowsRefsHeadsMaster" />
     </vcs-settings>
