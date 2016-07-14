@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="a7d3268e-f7a2-4a03-acd1-6bcc25537fa2" type="jetbrains.git" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
+  <name>https://github.com/gbizet/dockerWindows#refs/heads/master</name>
+  <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+  <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+  <param name="authMethod" value="PASSWORD" />
+  <param name="branch" value="refs/heads/master" />
+  <param name="ignoreKnownHosts" value="true" />
+  <param name="secure:password" value="zxxbe0b3bb071057d8d17af22d4f7b69ab684d486c87399498316885974bfbdfdc19219b382ae03754a775d03cbe80d301b" />
+  <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="url" value="https://github.com/gbizet/dockerWindows" />
+  <param name="useAlternates" value="true" />
+  <param name="username" value="gbizet" />
+  <param name="usernameStyle" value="USERID" />
+</vcs-root>
+

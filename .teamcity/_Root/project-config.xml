@@ -4,6 +4,15 @@
   <description>Contains all other projects</description>
   <parameters />
   <project-extensions>
+    <extension id="PROJECT_EXT_2" type="OAuthProvider">
+      <parameters>
+        <param name="clientId" value="12e50ecbbcecf34dfe2c" />
+        <param name="displayName" value="GitHub.com" />
+        <param name="gitHubUrl" value="https://github.com/" />
+        <param name="providerType" value="GitHub" />
+        <param name="secure:clientSecret" value="zxxb8322382fb4f18b0da5f422ba41399f7d2816514943d00e0be1b7adc340b2a4f865d3ef445d669b0775d03cbe80d301b" />
+      </parameters>
+    </extension>
     <extension id="versionedSettings" type="versionedSettings">
       <parameters>
         <param name="buildSettings" value="ALWAYS_USE_CURRENT" />

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="c631834f-1fa0-4b88-95da-776080a4b840" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
+  <name>DockerBuildApplicationInsideAcontainer</name>
+  <description />
+  <settings>
+    <options>
+      <option name="artifactRules" value="**/*=&gt;output" />
+    </options>
+    <parameters>
+      <param name="giturltobuild" value="Enterurrepohere" spec="text display='prompt' validationMode='any'" />
+      <param name="nameofbuild" value="MyBuild" spec="text display='prompt' label='NameOfContainer' validationMode='any'" />
+      <param name="slnpath" value="pathsln" spec="text display='prompt' label='pathofsln' validationMode='any'" />
+    </parameters>
+    <build-runners>
+      <runner id="RUNNER_11" name="Docker run" type="jetbrains_powershell">
+        <parameters>
+          <param name="jetbrains_powershell_bitness" value="x64" />
+          <param name="jetbrains_powershell_execution" value="STDIN" />
+          <param name="jetbrains_powershell_noprofile" value="true" />
+          <param name="jetbrains_powershell_script_code"><![CDATA[docker info
+echo "docker run -d --name %nameofbuild% -e "mybuild=%nameofbuild%" -e "repogit=%giturltobuild%" -e "slnpath=%slnpath%" -v %teamcity.build.checkoutDir%:c:\work guibizet/builder-dotnet:1.0"
+docker run -d --name %nameofbuild% -e "mybuild=%nameofbuild%" -e "repogit=%giturltobuild%" -e "slnpath=%slnpath%" -v %teamcity.build.checkoutDir%:c:\work guibizet/builder-dotnet:1.0]]></param>
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="DockerWindows_HttpsGithubComGbizetDockerWindowsRefsHeadsMaster" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
