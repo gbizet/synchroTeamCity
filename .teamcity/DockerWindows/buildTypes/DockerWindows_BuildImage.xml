@@ -3,6 +3,9 @@
   <name>BuildImage</name>
   <description />
   <settings>
+    <options>
+      <option name="checkoutDirectory" value="dockerbuild" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_13" name="" type="jetbrains_powershell">
