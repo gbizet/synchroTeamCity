@@ -5,6 +5,7 @@
   <settings>
     <options>
       <option name="artifactRules" value="**/*=&gt;output" />
+      <option name="cleanBuild" value="true" />
     </options>
     <parameters>
       <param name="giturltobuild" value="Enterurrepohere" spec="text display='prompt' validationMode='any'" />
