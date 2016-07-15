@@ -29,6 +29,12 @@ docker build -t testbibi .]]></param>
           <param name="quietPeriodMode" value="DO_NOT_USE" />
         </parameters>
       </build-trigger>
+      <build-trigger id="TRIGGER_1" type="buildDependencyTrigger">
+        <parameters>
+          <param name="afterSuccessfulBuildOnly" value="true" />
+          <param name="dependsOn" value="DockerWindows_LogsOfTheContainer" />
+        </parameters>
+      </build-trigger>
     </build-triggers>
     <artifact-dependencies>
       <dependency id="ARTIFACT_DEPENDENCY_1" sourceBuildTypeId="DockerWindows_LogsOfTheContainer" cleanDestination="false">
