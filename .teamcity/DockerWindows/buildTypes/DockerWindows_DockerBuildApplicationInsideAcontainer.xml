@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="**/*=&gt;output" />
+      <option name="artifactRules" value="**/output/**/*=&gt;output" />
       <option name="cleanBuild" value="true" />
     </options>
     <parameters>
