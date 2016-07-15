@@ -11,11 +11,14 @@
       <runner id="RUNNER_13" name="" type="jetbrains_powershell">
         <parameters>
           <param name="jetbrains_powershell_bitness" value="x64" />
-          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_execution" value="STDIN" />
           <param name="jetbrains_powershell_noprofile" value="true" />
           <param name="jetbrains_powershell_script_code"><![CDATA[cd docker
 cd output
-docker build -t testbibi .]]></param>
+docker build -t %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% .
+
+#Pour la démo un run
+docker run -d -p 80:80 %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell]]></param>
           <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
