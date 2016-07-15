@@ -18,7 +18,8 @@
           <param name="jetbrains_powershell_bitness" value="x64" />
           <param name="jetbrains_powershell_execution" value="STDIN" />
           <param name="jetbrains_powershell_noprofile" value="true" />
-          <param name="jetbrains_powershell_script_code"><![CDATA[echo "**********************************************"
+          <param name="jetbrains_powershell_script_code"><![CDATA[mkdir output
+echo "**********************************************"
 echo "**********************************************"
 echo "Launching Build container"
 echo "**********************************************"
