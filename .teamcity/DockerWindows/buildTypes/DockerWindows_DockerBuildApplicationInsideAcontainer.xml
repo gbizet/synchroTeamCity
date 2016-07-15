@@ -25,9 +25,7 @@ docker run -d --name %nameofbuild% -e "mybuild=%nameofbuild%" -e "repogit=%gitur
         </parameters>
       </runner>
     </build-runners>
-    <vcs-settings>
-      <vcs-entry-ref root-id="DockerWindows_HttpsGithubComGbizetDockerWindowsRefsHeadsMaster" />
-    </vcs-settings>
+    <vcs-settings />
     <requirements />
     <build-triggers />
     <cleanup />
