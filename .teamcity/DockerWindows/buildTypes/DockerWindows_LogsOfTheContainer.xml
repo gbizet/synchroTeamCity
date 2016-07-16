@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="7ad0b1ca-23a3-49f6-9a9a-184f514b4319" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
-  <name>LogsOfTheContainer</name>
+  <name>LogsOfContainerAndPublishArtifactsToTeamCity</name>
   <description />
   <settings>
     <options>
