@@ -9,7 +9,7 @@
     </options>
     <parameters>
       <param name="giturltobuild" value="https://github.com/Finaxys/Docker-Hello.git" spec="text display='prompt' validationMode='any'" />
-      <param name="nameofbuild" value="MyBuild" spec="text display='prompt' label='NameOfContainer' validationMode='any'" />
+      <param name="nameofbuild" value="mybuild" spec="text display='prompt' label='NameOfContainer' validationMode='any'" />
       <param name="slnpath" value="pathsln" spec="text display='prompt' label='pathofsln' validationMode='any'" />
     </parameters>
     <build-runners>
