@@ -11,7 +11,7 @@
       <param name="giturltobuild" value="https://github.com/Finaxys/Docker-Hello.git" spec="text display='prompt' validationMode='any'" />
       <param name="nameofbuild" value="mybuild" spec="text display='prompt' label='NameOfContainer' validationMode='any'" />
       <param name="slnpath" value="docker-hello\" spec="text display='prompt' label='pathofsln' validationMode='any'" />
-      <param name="versionbuilder" value="" spec="select label_3='c#' display='prompt' data_1='1.1' label_1='asp' data_3='1.0'" />
+      <param name="versionbuilder" value="1.1" spec="select label_3='c#' data_1='1.1' label_1='asp' display='prompt' data_3='1.0'" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_11" name="Docker run" type="jetbrains_powershell">
