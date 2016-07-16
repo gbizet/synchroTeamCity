@@ -16,7 +16,8 @@
           <param name="jetbrains_powershell_script_code"><![CDATA[cd docker
 cd output
 docker build -t %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% .
-
+echo cstop running process with same name
+docker rm -fv %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%
 #Pour la démo un run
 docker run -d -p 80:80 %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell]]></param>
           <param name="jetbrains_powershell_script_mode" value="CODE" />
