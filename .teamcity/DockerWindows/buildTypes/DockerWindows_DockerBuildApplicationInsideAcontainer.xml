@@ -11,6 +11,7 @@
       <param name="giturltobuild" value="https://github.com/Finaxys/Docker-Hello.git" spec="text display='prompt' validationMode='any'" />
       <param name="nameofbuild" value="mybuild" spec="text display='prompt' label='NameOfContainer' validationMode='any'" />
       <param name="slnpath" value="docker-hello\" spec="text display='prompt' label='pathofsln' validationMode='any'" />
+      <param name="versionbuilder" value="" spec="select label_3='c#' display='prompt' data_1='1.1' label_1='asp' data_3='1.0'" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_11" name="Docker run" type="jetbrains_powershell">
@@ -23,7 +24,7 @@ echo "**********************************************"
 echo "Launching Build container"
 echo "**********************************************"
 echo "**********************************************"
-echo "docker run -d --name %nameofbuild% -e "mybuild=%nameofbuild%" -e "repogit=%giturltobuild%" -e "slnpath=%slnpath%" -v %teamcity.build.checkoutDir%:c:\work guibizet/builder-dotnet:1.0"
+echo "docker run -d --name %nameofbuild% -e "mybuild=%nameofbuild%" -e "repogit=%giturltobuild%" -e "slnpath=%slnpath%" -v %teamcity.build.checkoutDir%:c:\work guibizet/builder-dotnet:%versionbuilder%"
 docker run -d --name %nameofbuild% -e "mybuild=%nameofbuild%" -e "repogit=%giturltobuild%" -e "slnpath=%slnpath%" -v %teamcity.build.checkoutDir%:c:\work guibizet/builder-dotnet:1.0]]></param>
           <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
