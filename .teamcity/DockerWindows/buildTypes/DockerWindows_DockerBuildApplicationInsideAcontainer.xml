@@ -10,7 +10,7 @@
     <parameters>
       <param name="giturltobuild" value="https://github.com/Finaxys/Docker-Hello.git" spec="text display='prompt' validationMode='any'" />
       <param name="nameofbuild" value="mybuild" spec="text display='prompt' label='NameOfContainer' validationMode='any'" />
-      <param name="slnpath" value="pathsln" spec="text display='prompt' label='pathofsln' validationMode='any'" />
+      <param name="slnpath" value="docker-hello\" spec="text display='prompt' label='pathofsln' validationMode='any'" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_11" name="Docker run" type="jetbrains_powershell">
