@@ -9,6 +9,7 @@
     </options>
     <parameters>
       <param name="passworddocker" value="zxx041d7762d731da63" spec="password display='normal'" />
+      <param name="userdocker" value="guibizet" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_13" name="" type="jetbrains_powershell">
