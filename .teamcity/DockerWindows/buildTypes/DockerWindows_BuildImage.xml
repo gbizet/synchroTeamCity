@@ -19,14 +19,45 @@
           <param name="jetbrains_powershell_noprofile" value="true" />
           <param name="jetbrains_powershell_script_code"><![CDATA[cd docker
 cd output
-docker build -t %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% .
-echo cstop running process with same name
+echo "*****************************************"
+echo "*****************************************"
+echo "We build and tag"
+echo "docker build -t guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% ."
+echo "*****************************************"
+echo "*****************************************"
+
+
+docker build -t guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% .
+
+
+echo "*****************************************"
+echo "*****************************************"
+echo "deletion of the stopped container used for build the sln"
+echo "docker rm -fv %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%"
+echo "*****************************************"
+echo "*****************************************"
+
+
 docker rm -fv %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%
-#Pour la démo un run
-docker run -d --name %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 80:80 %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell
-#once the image is run, then push it
-#first log to registry
-echo docker login -u %userdocker% -p %passworddocker%
+
+echo "*****************************************"
+echo "*****************************************"
+echo "Run the new image "
+echo "docker run -d --name guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 80:80 %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell"
+echo "*****************************************"
+echo "*****************************************"
+
+docker run -d --name guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 80:80 %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell
+
+echo "*****************************************"
+echo "*****************************************"
+echo "Login and push"
+
+echo "docker login -u %userdocker% -p %passworddocker%"
+echo  "docker push guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter%"
+
+echo "*****************************************"
+echo "*****************************************"
 docker login -u %userdocker% -p %passworddocker%
 docker push guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter%]]></param>
           <param name="jetbrains_powershell_script_mode" value="CODE" />
