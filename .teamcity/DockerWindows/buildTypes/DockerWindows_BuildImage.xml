@@ -28,7 +28,7 @@ docker run -d --name %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 8
 #first log to registry
 echo docker login -u %userdocker% -p %passworddocker%
 docker login -u %userdocker% -p %passworddocker%
-docker push %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter%]]></param>
+docker push guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter%]]></param>
           <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
