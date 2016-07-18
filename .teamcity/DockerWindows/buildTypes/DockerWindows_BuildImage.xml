@@ -43,11 +43,11 @@ docker rm -fv %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%
 echo "*****************************************"
 echo "*****************************************"
 echo "Run the new image "
-echo "docker run -d --name guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 80:80 %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell"
+echo "docker run -d --name %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 80:80 guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell"
 echo "*****************************************"
 echo "*****************************************"
 
-docker run -d --name guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 80:80 %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell
+docker run -d --name %dep.DockerWindows_LogsOfTheContainer.env.nameofbuild% -p 80:80 guibizet/%dep.DockerWindows_LogsOfTheContainer.env.nameofbuild%:1.%build.counter% powershell
 
 echo "*****************************************"
 echo "*****************************************"
